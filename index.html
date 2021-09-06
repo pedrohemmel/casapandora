@@ -1,225 +1,324 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Casa Pandora</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <header>
-      <div class="fundoTopo">
-        <div id="logoTopo">
-          <img width="300px" height="100px" src="images/logoPandora.png">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <!--favi ico-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+    <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!--css-->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!--js-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg primary-bg-color p-2" id="navbar">
+        <header class="container">
+            <a href="" class="navbar-brand"><img src="images/logoBusinessFG.png"></a>
+        </header>
+        <nav id="navbar-items">
+            <div></div>
+            
+            <a href="#sejaParceiro" class="btn btn-primary btnParceiro secondary-color">
+                Seja nosso parceiro
+                <i style="font-size: 15px;" class="bi bi-bookmark-check secundary-color"></i>
+            </a>
+
+            <div></div>
+            <!--banner parceiro-->
+            <ul style="margin: 0;" class="navbar-nav mb-2 mb-lg-0 contatoNavBar">
+                <li class="nav-item">
+                    <a href="" class="nav-link dark-bg-color">
+                        <img src="images/logoSolutti.png">
+                    </a>
+                </li>
+            
+            </ul>
+        </nav>
+    </nav>
+
+    <!--BOTTOM NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg secondary-bg-color p-2" id="bottom-navbar-container">
+        <section class="container">
+            <button 
+            class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#bottom-navbar" 
+            aria-controls="bottom-navbar" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <ul class="navbar-nav mb-2 mb-lg-0 collapse navbar-collapse listaNavBx" id="bottom-navbar">
+                <li class="nav-item">
+                    <a href="#banners-container" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="nossosProdutos.html" class="nav-link">
+                        Nossos produtos
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sobre Nós
+                    </a>
+                    <ul class="dropdown-menu secondary-bg-color" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="nossaHistoria.html">Nossa Historia</a></li>
+                      <li><a class="dropdown-item" href="nossosPrincipios.html">Nossos Princípios</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="nossaEquipe.html">Nossa Equipe</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="contato.html" class="nav-link">
+                        Contato
+                    </a>
+                </li>
+                
+                <li class="nav-item">
+                    <div class="segNav">
+                        <a href="#sejaParceiro" class="btn btn-primary btnParceiroNav secondary-color">
+                            Seja nosso parceiro
+                            <i style="font-size: 15px;" class="bi bi-bookmark-check"></i>
+                        </a>
+                    </div>
+                </li>
+                
+            </ul>
+        </section>
+    </nav>
+    <!--Fim NavBar-->
+
+    <!--Banners-->
+
+    <section class="container" id="banners-container">
+        <section class="carousel slide" id="slider" data-bs-ride="carousel">
+            <article class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/banner1.png" alt="banner 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Exemplo</h5>
+                        <p>Exemplo</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/banner2.png" alt="banner 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Exemplo</h5>
+                        <p>Exemplo</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="images/banner3.png" alt="banner 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Exemplo</h5>
+                        <p>Exemplo</p>
+                    </div>
+                </div>
+            </article>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+        </section>
+        <section class="container" id="mini-banners">
+            <article class="row justify-content-around">
+                <div class="col-12 fundoPagClaro" id="mini-banner-1">
+                    <h2 class="secondary-color">CPF-A1 </h2>
+                    <img src="images/notebookCertisign.png" alt="banner1">
+                    <a href="#">Compre agora</a>
+                </div>
+                <div class="col-12 secondary-bg-color" id="mini-banner-1">
+                    <h2 class="secondary-color">CNPJ-A1 Mobile</h2>
+                    <img src="images/celularCertisign.png" alt="banner1">
+                    <a href="#">Compre agora</a>
+                </div>
+                <div class="col-12 dark-bg-color" id="mini-banner-1">
+                    <h2 class="secondary-color">CNPJ-A1 Desktop</h2>
+                    <img src="images/notebookCertisign.png" alt="banner1">
+                    <a id="hoverMeio" href="#">Compre agora</a>
+                </div>
+            </article>
+        </section>
+    </section>
+
+    <!--Mais vendidos-->
+    <section class="container-fluid classeMaisVendidos">
+        <nav class="container" id="maisVendidos">
+            <h2 class="title primary-color">Mais vendidos</h2>
+            <nav class="row">
+                <article class="col-12 col-md-6">
+                    <div class="card transparent-bg-color">
+                        <img src="images/notebookCertisign.png" alt="pacote 1" id="imagemMaisVendidos" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <p class="card-category">12 meses</p>
+                            <h5 class="card-title primary-color">CNPJ-A1 Desktop</h5>
+                            <p class="descricaoProduto">É o certificado digital destinado a pessoas jurídicas, é utilizado para realizar assinaturas digitais 
+                                e demais processos no meio digital. Este modelo é um certificado A1 - válido por 12 meses, com apropriações na rede,sendo que uma das opções 
+                                é somente certificado sem Sistema Emissor de NF e a outra comtempla o serviço,você pode utilizar e assinar documentos na comodidade do seu 
+                                celular, tablet e dispositivo móvel (não é possível utilizar em desktop e Notebook).</p>
+                            <p class="card-text primary-color">R$170,00</p>
+                            <a href="#" class="secondary-bg-color btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <div class="card transparent-bg-color">
+                        <img src="images/celularCertisign.png" alt="pacote 1" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <p class="card-category">12 meses</p>
+                            <h5 class="card-title primary-color">CNPJ-A1 Mobile</h5>
+                            <p class="descricaoProduto">É o certificado digital destinado a pessoas jurídicas, é utilizado para realizar assinaturas digitais 
+                                e demais processos no meio digital. Este modelo é um certificado A1 - válido por 12 meses, com apropriações na rede, 
+                                você pode utilizar e assinar documentos na comodidade do seu celular, computador ou dispositivo móvel.</p>
+                            <p class="card-text primary-color">R$170,00</p>
+                            <a href="#" class="secondary-bg-color btn btn-primary">Comprar</a>
+                            
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <div class="card transparent-bg-color">
+                        <img src="images/notebookCertisign.png" alt="pacote 1" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <p class="card-category">12 meses</p>
+                            <h5 class="card-title primary-color">CPF-A1 Desktop</h5>
+                            <p class="descricaoProduto">É o certificado digital destinado a pessoas físicas, é utilizado para realizar assinaturas digitais e demais processos no 
+                                meio digital. Este modelo é um certificado A1 - válido por 12 meses, com apropriações na rede, você pode utilizar e 
+                                assinar documentos na comodidade do seu celular, computador ou dispositivo móvel.</p>
+                            <p class="card-text primary-color">R$170,00</p>
+                            <a href="#" class="secondary-bg-color btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6">
+                    <div class="card transparent-bg-color">
+                        <img src="images/celularCertisign.png" alt="pacote 1" class="card-img-top img-fluid">
+                        <div class="card-body">
+                            <p class="card-category">12 meses</p>
+                            <h5 class="card-title primary-color">CPF-A1 Mobile</h5>
+                            <p class="descricaoProduto">É o certificado digital destinado a pessoas físicas, é utilizado para realizar assinaturas digitais e demais processos no 
+                                meio digital. Este modelo é um certificado A1 - válido por 12 meses, com apropriações na rede, você pode utilizar e 
+                                assinar documentos na comodidade do seu celular, computador ou dispositivo móvel.</p>
+                            <p class="card-text primary-color">R$170,00</p>
+                            <a href="#" class="secondary-bg-color btn btn-primary">Comprar</a>
+                        </div>
+                    </div>
+                </article>   
+                </nav>
+            </nav>
+           
+    </section>
+    <!--Seja parceiro-->
+    <section class="container-fluid fundoPagClaro" id="sejaParceiro">
+        <nav class="row">
+            <article class="col-12" id="bannerParceiro">
+                <img src="images/parceiros.png" alt="Foto seja parceiro">
+            </article>
+            <article class="col-12">
+                <div class="container">
+                    <p class="offer-subtitle">
+                        Trabalhamos com um método de fidelidade para nossos parceiros, com ênfase 
+                        em benefícios para sua empresa como descontos, comissionamentos, gestão de 
+                        processos e demais vantagens que iremos oferecer.
+                    </p>
+                    <button class="light-color btn btn-dark"><a href="">Seja nosso parceiro</a></button>
+                    <p>
+                        Acreditamos que para manter uma parceria longa e duradoura é necessário cada 
+                        vez mais otimizar nossa comunicação com nossos clientes. Para isso iremos 
+                        entregar um acompanhamento diário e mensal referente a nossa filiação.
+                    </p>
+                    <h2>E aí, Tá dentro?!</h2>
+                </div>
+                
+
+
+            </article>
+        </nav>
+    </section>
+    <!--CONTATO-->
+    <section class="container-fluid secondary-bg-color" id="contato">
+        <div class="container">
+            <nav class="row">
+                <article class="col-12 col-md-4">
+                    <img src="images/fotoContato.png" alt="foto contato">
+                </article>
+
+                <article class="col-12 col-md-8">
+                    <h3><b>Contate-</b>nos</h3>
+                    <p>Entre em contato e acesse nossas redes sociais para estar sempre por dentro das nossas atualizações <i class="bi bi-globe"></i></p>
+                    <button onclick="apareceRedes()" class="btn btn-dark">Acesse</button>
+                    <div class="secondary-color" id="acessoRedes">
+                        <p>Redes de contato:</p>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-whatsapp"></i></a>
+                        <a href=""><i class="bi bi-envelope-open"></i></a>
+                    </div>
+                </article>
+            </nav>
         </div>
-        <div id="menuTopo">
-          <a href="">Home</a>
-          <a href="">Vendas</a>
-          <a href="">Pet Shop</a>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="fotosPandora">
-        <div class="fundoPandora">
-          <div id="casaRacao">
-              <img src="https://www.guiadotaboao.com.br/wp-content/uploads/2018/03/casa-de-ra%C3%A7%C3%A3o-pandora-em-taboao-da-serra-passarinho-comida-aquarios-peixes.jpg">
-          </div>
-          <div class="sobre">
-           <div class="tituloTexto">
-             <h2>Sobre Nós</h2>
-             <p>Todos nós que temos um companheiro em nossa casa, sabemos que o afeto é gigantesco com nossos animais domésticos, e nós da Pandora não somos diferentes, temos um afeto imenso por cada amiguinho(a) que vem nos visitar, tratamos todos com muito amor e carinho. Tudo que fornecemos (produtos, serviços) são analisados e entregados conforme a espécie, condição física, peso, entre outros fatores que analisamos a risca. </p>
-             <p>A casa de Ração Pandora está a mais de 3 anos no mercado. Nosso comprometimento é levar produtos de alta qualidade ao seu pet. Contamos com profissionais adequados e bem capacitados para dar o melhor tratamento ao seu amiguinho(a).</p>
-            <h4>Um pet feliz faz toda família feliz!</h4>
-           </div>
-          </div>
-        </div>
-      </div>
-      <div class="contato">
-        <div class="fundoContato">
-          <div class="redes">
-            <div id="whats">
-              <img src="images/zapicerti.png">
-            </div>
-            <div id="insta">
-              <img src="images/ig.png">
-            </div>
-            <div id="face">
-              <img src="images/fb.png">
-            </div>
-            <div id="email">
-              <img src="images/gmail.png">
-            </div> 
-          </div>
-        </div>
-      </div>
-      <div class="banner">
-        <div class="fundoBanner">
-          <div class="fotoBanner">
-            <img height="250px" src="https://www.petvale.com.br/imagens/varios_cachorros.png">
-          </div>
-          <div class="textoBanner">
-            <h2>Entre em contato conosco</h2>
-            <p>Olá, tudo bem? Acesse o link para ver informações sobre nosso petshop. Veja também sobre nossa casa de ração logo baixo!</p>
-            <div id="paginaPet">
-              <a href="">
-              <p>Veja mais informações sobre nosso petshop</p>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="bannerRacao">
-      </div>
-      <div class="racaoEDog">
-        <div class="fundoRacaoEDog">
-          <div class="gradeRacoes">
-            <div class="fundoRacoes">
-              <h2>Conheça nossas melhores rações</h2>
-              <div class="racoes">
-                <div class="marcaRacao">
-                  <h3>Special Dog</h3>
-                </div>
-                <div class="foto">
-                  <img src="images/especialDog.png">
-                </div>
-                <div clas="vejaMais">
-                </div>
-              </div>
-              <div class="racoes">
-                <div class="marcaRacao">
-                  <h3>Golden</h3>
-                </div>
-                <div class="foto">
-                  <img src="images/goldenCerto.png">
-                </div>
-                <div clas="vejaMais">
-                </div>
-              </div>
-              <div class="racoes">
-                <div class="marcaRacao">
-                  <h3>Magnus</h3>
-                </div>
-                <div class="foto">
-                  <img src="images/magnus.png">
-                </div>
-                <div clas="vejaMais">
-                </div>
-              </div>
-              <div class="racoes">
-                <div class="marcaRacao">
-                  <h3>Premier</h3>
-                </div>
-                <div class="foto">
-                  <img src="images/premier.png">
-                </div>
-                <div clas="vejaMais">
-                </div>
-              </div>
-              <div class="racoes">
-                <div class="marcaRacao">
-                  <h3>Gran Plus</h3>
-                </div>
-                <div class="foto">
-                  <img src="images/granPlus.png">
-                </div>
-                <div clas="vejaMais">
-                </div>
-              </div>
-              <div class="racoes">
-                <div class="marcaRacao">
-                  <h3>Pedigree</h3>
-                </div>
-                <div class="foto">
-                  <img src="images/pedigree.png">
-                </div>
-                <div clas="vejaMais">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fotoDog">
-            <div class="fundoFoto">
-              <div class="tituloDog">
-                <h2>Veja alguns de nossos amiguinhos(as) que ja são de casa!</h2>
-              </div>
-              <div class="gradeFoto">
-                <div class="perfilDog">
-                  <div class="nomeDog">
-                    <h3>Julie</h3>
-                  </div>
-                  <div class="fotoDogGrade">
-                    <img width="120px" height="120px" src="images/julie.png">
-                  </div>
-                </div>
-                <div class="perfilDog">
-                  <div class="nomeDog">
-                    <h3>Bela</h3>
-                  </div>
-                  <div class="fotoDogGrade">
-                    <img width="120px" height="120px" src="images/bela.png">
-                  </div>
-                </div>
-                <div class="perfilDog">
-                  <div class="nomeDog">
-                    <h3>Antonio</h3>
-                  </div>
-                  <div class="fotoDogGrade">
-                    <img width="120px" height="120px" src="images/antonio.png">
-                  </div>
-                </div>
-                <div class="perfilDog">
-                  <div class="nomeDog">
-                    <h3>Luna</h3>
-                  </div>
-                  <div class="fotoDogGrade">
-                    <img width="120px" height="120px" src="images/luna.png">
-                  </div>
-                </div>
-                <div class="perfilDog">
-                  <div class="nomeDog">
-                    <h3>Samu</h3>
-                  </div>
-                  <div class="fotoDogGrade">
-                    <img width="120px" height="120px" src="images/samu.png">
-                  </div>
-                </div>
-                <div class="perfilDog">
-                  <div class="nomeDog">
-                    <h3>Bidu</h3>
-                  </div>
-                  <div class="fotoDogGrade">
-                    <img width="120px" height="120px" src="images/cachorro.png">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="creditos">
-        <div class="fundoCredito">
-          <div class="gradeCreditos">
-            <div class="classAtendimento">
-              <h2>Local</h2>
-              <p>Av. Fernando Fernandes, 433</p>
-            </div>
-            <div class="classPolitica">
-              <h2>Políticas</h2>
-              <p>Privacidade</p>
-              <p>Segurança</p>
-              <p>Sistema leva-e-trás</p>
-            </div>
-            <div class="ligue">
-              <h2>Contato</h2>
-              <p>(11)9 9999-9999</p>
-              <p>(11) 9999-9999</p>
-              <p>meuemail@email.com.br</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </section>
+    <!--footer-->
+    <footer id="footer">
+        <section class="container-fluid dark-bg-color" id="footer-links-container">
+            <nav class="row">
+                <article class="col-12 col-md-4 footer-column">
+                    <h3 class="secondary-color">Páginas</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#banners-container" class="grayLight-color">Home</a></li>
+                        <li class="mb-2"><a href="#apresentacao" class="grayLight-color">Sobre nós</a></li>
+                        <li class="mb-2"><a href="#maisVendidos" class="grayLight-color">Mais Vendidos</a></li>
+                        <li class="mb-2"><a href="#contato" class="grayLight-color">Contato</a></li>
+                    </ul>
+                </article>
+                <article class="col-12 col-md-4 footer-column" id="footer-center">
+                    <h3 class="secondary-color">Contato</h3>
+                    <p class="grayLight-color"><a href="" class="grayLight-color">Alguma dúvida? Ligue para nós <i class="bi bi-phone"></i></a></p>
+                    <p class="store-phone grayLight-color"><i class="bi bi-telephone"></i> (50)99999-9999</p>
+                </article>
+                <article class="col-12 col-md-4 footer-column">
+                    <h3 class="secondary-color">Informações</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="" class="grayLight-color">Poítica de Privacidade</a></li>
+                        <li class="mb-2"><a href="" class="grayLight-color">Política de Envio</a></li>
+                    </ul>
+                </article>
+            </nav>
+        </section>
+        <section class="container-fluid dark-bg-color" id="footerRedes">
+            <article class="col-12">
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-whatsapp"></i></a>
+                <a href=""><i class="bi bi-envelope-open"></i></a>
+            </article>
+        </section>
+        <section class="container-fluid dark-bg-color" id="copyContainer">
+            <p>Todos os direitos reservados @2021 <span class="primary-color">Contato</span> - Adquira seu certificado</p>
+        </section>
+    </footer> 
+</body>
 </html>

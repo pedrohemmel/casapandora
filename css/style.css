@@ -1,0 +1,995 @@
+:root {
+    --corPagina: #318ba3;
+}
+
+* {
+    font-family: 'montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+
+
+.primary-bg-color {
+    background-color: white;
+}
+
+.secondary-bg-color {
+    background-color: var(--corPagina);
+}
+
+.fundoPagClaro {
+    background-color: #7ecadf;
+}
+
+.light-bg-color {
+    background-color: #FCF5EB;
+}
+
+.dark-bg-color {
+    background-color: #101010;
+}
+
+.transparent-bg-color {
+    background-color: transparent;
+}
+
+.primary-color {
+    color: var(--corPagina);
+}
+
+.secondary-color {
+    color: #fff;
+}
+
+.dark-color {
+    color: #000;
+}
+
+.grayLight-color {
+    color: #708388;
+}
+
+/*NAVBAR*/
+
+#navbar .navbar-nav {
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#navbar .navbar-nav li {
+    margin-left: 1em;
+}
+
+#navbar .contatoNavbar a {
+    color: black;
+}
+
+#navbar li {
+    position: relative;
+}
+
+#navbar i {
+    font-size: 30px;
+}
+
+#navbar ul {
+    margin-right: 30px;
+}
+
+.navbar-brand {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar-brand img{
+    width: 150px;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand {
+        justify-content: left;
+        margin-left: 30%;
+    }
+}
+
+@media screen and (min-width: 500px) {
+
+    .navbar-brand img{
+        width: 170px;
+    }
+
+}
+
+#navbar-items {
+    min-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+    .contatoNavBar {
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        
+    }
+
+    .contatoNavBar a {
+        border-radius: 10px;
+        padding: 0 5px;
+    }
+
+    .contatoNavBar img {
+        width: 30px;
+        margin: 0 5px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .contatoNavBar img {
+            width: 40px;
+            
+        }
+    }
+
+.btnParceiro {
+    display: none;
+    background-color: var(--corPagina);
+    border: none;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 992px) {
+    .btnParceiro {
+       display: block;
+    }
+}
+
+.btnParceiro:hover {
+    background-color: #2d7b91;
+}
+
+.bi-whatsapp {
+    transition: 0.3s;
+}
+
+.bi-whatsapp:hover {
+    color: #34af23;
+}
+
+.bi-instagram {
+    transition: 0.3s;
+}
+
+.bi-instagram:hover {
+    color: #F77737;
+}
+
+
+
+
+
+.segNav {
+    display: none;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; 
+    margin-top: 30px;
+}
+
+.segNav a {
+    color: white;
+    border-color: white;
+    background-color: black;
+    
+}
+
+.segNav a:hover {
+    color: white;
+    border-color: white;
+    background-color: black;
+}
+
+/*BOTTOM NAVBAR*/
+
+
+#bottom-navbar-container .container {
+    justify-content: flex-end;
+}
+
+#bottom-navbar-container a {
+    font-weight: 600;
+    color: #fff;
+
+    border: none;
+}
+
+#bottom-navbar-container a:active {
+    border: none;
+}
+
+#bottom-navbar .dropdown-item {
+    width: 100%;
+}
+
+#bottom-navbar .dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.364);
+}
+
+
+
+@media (min-width: 768px) {
+    #bottom-navbar .dropdown-menu {
+        margin: 10px 0 0 0;;
+
+
+        transition: 0.3s;
+    }
+}
+
+.navbar-toggler {
+    font-size: 1.5em;
+}
+
+.listaNavBx li {
+    margin-right: 10px;
+}
+
+
+
+@media screen and (max-width: 992px) {
+    .segNav {
+        display: flex;
+    }
+}
+
+/*Banners*/
+
+#banners-container {
+    padding: 0;
+}
+
+.carousel-item img {
+    width: 60%;
+}
+
+.carousel-caption {
+    bottom: 2em;
+    padding: 1em;
+    font-size: 0.7em;
+    background-color: rgba(0,0,0,0.5);
+    left: 12%;
+    right: 12%;
+}
+
+.carousel-caption h5 {
+    font-size: 1.8em;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .carousel-caption {
+        font-size: 1em;  
+        bottom: 5em; 
+    }
+
+    .carousel-caption h5 {
+        font-size: 4em;
+    }
+}
+
+/*MINI BANNERS*/
+
+#mini-banners .col-12 {
+    z-index: 1;
+    height: 300px;
+    padding: 1.5em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #mini-banners {
+        margin-top: -3em;
+        z-index: 10;
+    }
+
+    #mini-banners .col-12 {
+        max-width: 30%;
+        height: 300px;
+    }
+
+    
+}
+
+#mini-banners .col-12 h2 {
+    text-transform: uppercase;
+    width: 200px;
+    font-size: 2.2em;
+    font-weight: 700;
+    line-height: 1em;
+}
+
+#mini-banners .col-12 img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 1em;
+    bottom: 2em;
+}
+
+@media (min-width: 768px) {
+    #mini-banners .col-12 img {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        right: 2em;
+        bottom: 3em;
+    }
+}
+
+@media (min-width: 990px) {
+    #mini-banners .col-12 img {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        right: 2em;
+        bottom: 2em;
+    }
+}
+
+#mini-banners .col-12 a {
+    font-weight: bold;
+    color: white;
+    font-size: 0.8em;
+    transition: 0.5s;
+}
+
+#mini-banners .col-12 a:hover {
+    color: rgb(237, 126, 86);
+}
+
+/*SOBRE NÓS*/
+
+/*APRESENTACAO*/
+
+#apresentacao {
+    padding-top: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+#apresentacao .offer-subtitle,
+#apresentacao h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--corPagina);
+}
+
+#apresentacao img {
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    #apresentacao img {
+        width: 100%;
+    }
+
+    #apresentacao h2 {
+        font-size: 6em;
+    }
+}
+
+#apresentacao .btn {
+    margin: 2em;
+    padding: 1em;
+
+    border: none;
+
+    font-weight: bold;
+
+    background-color: var(--corPagina);
+}
+
+#apresentacao .btn:hover {
+    background-color: #2d7b91;
+}
+
+/*NOSSA HISTORIA*/
+
+#nossaHistoria {
+    margin: 4em 0;
+}
+
+#nossaHistoria .col-12 h3 {
+    padding: 0;
+
+    text-align: center;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    color: var(--corPagina);
+}
+
+@media (min-width: 768px) {
+    #nossaHistoria .col-12 h3 {
+        font-size: 40px;
+    }
+}
+
+#nossaHistoria .col-12{
+    padding: 0;
+}
+
+#nossaHistoria img {
+    width: 100%;
+}
+
+#nossaHistoria #imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nossaHistoria .col-md-6 {
+    padding: 0;
+}
+
+#nossaHistoria p {
+    padding: 0 20px;
+    text-align: justify;
+
+    font-weight: 500;
+}
+
+#nossaHistoria #texto1 {
+    padding-top: 30px;
+}
+
+#nossaHistoria .texto2none {
+    display: none;
+}
+
+@media (min-width: 1300px) {
+    #nossaHistoria #texto2 {
+        display: none;
+    }
+
+    #nossaHistoria .texto2none {
+        display: block;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #nossaHistoria #texto1 {
+        padding-top: 50px;
+    }
+
+    #nossaHistoria p {
+        padding: 0 60px;
+    }
+}
+
+
+/*Nossos principios*/
+
+#nossosPrincipios {
+    padding: 4em 0;
+}
+
+#nossosPrincipios h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 0 2em 0;
+}
+
+#nossosPrincipios .col-12 h4 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#nossosPrincipios .col-12 p {
+    text-align: justify;
+    font-weight: 500;
+}
+
+#nossosPrincipios .iconePrincipios {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#nossosPrincipios .bi {
+    font-size: 40px;
+    margin: 20px 0;
+
+}
+
+
+#nossosPrincipios .blocoNossosPrincipios {
+    border-radius: 20px;
+
+    height: 300px;
+    width: 100%;
+
+    margin: 10px 0;
+    padding: 10px;
+
+    overflow: auto;
+
+    box-shadow: 2px 2px 10px rgba(58, 58, 58, 0.5);
+}
+
+@media (min-width: 768px) {
+    
+    #nossosPrincipios .blocoNossosPrincipios {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    
+        height: 300px;
+        width: 100%;
+    
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #nossosPrincipios h3 {
+        font-size: 40px;
+    }
+}
+
+
+/*SOBRE NÓS*/
+
+/*mais vendidos*/
+
+.classeMaisVendidos {
+    position: relative;
+    padding: 0;
+}
+
+
+#maisVendidos {
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#maisVendidos row {
+    margin: 0;
+}
+
+
+.card-title {
+    font-weight: bold;
+}
+
+.title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .title {
+        text-align: left;
+    }
+}
+
+.card {
+    text-align: center;
+    border-radius: 0;
+
+    margin-bottom: 25px;
+}
+
+
+
+.card img {
+    width: 70%;
+    margin: 2em auto;
+    
+}
+
+.card-body p {
+    color:rgb(58, 58, 58);
+}
+
+.card .card-text {
+    margin: 2em 0;
+    font-weight: bold;
+}
+
+.card-body a {
+    border: none;
+}
+
+.card-body a:hover {
+    background-color: #2d7b91;
+}
+
+.verMaisProdutos {
+    text-align: center;
+    margin: 40px auto;
+    color: white;  
+    border: none;
+    width: 90%;
+}
+
+@media(min-width: 768px) {
+    .verMaisProdutos {
+        width: 100%;
+    }
+}
+
+.verMaisProdutos:hover {
+    color: white; 
+    background-color: #2d7b91;
+}
+
+/*Todos produtos*/
+
+#todosProdutos {
+    margin: auto;
+    top: 0;
+    padding-top: 4em;
+    padding-bottom: 4em;
+   
+}
+
+
+.todosProdutos {
+    background-color: #fff;
+}
+
+#todosProdutos .col-md-6 {
+    margin-bottom: 20px;
+}
+
+#todosProdutos .row {
+    margin-top: 20px;
+}
+
+.descricaoProduto {
+    overflow: auto;
+    height: 200px;
+    text-align: justify;
+}
+
+@media(min-width: 768px) {
+    .descricaoProduto {
+        overflow: auto;
+        height: 200px;
+        text-align: center;;
+    }
+}
+
+/*CONTATO*/
+
+
+
+#contato .container {
+    padding: 40px 0;
+}
+
+#contato .col-md-8 {
+    color: #fff;
+    text-align: center;
+
+    margin-top: 3em;
+}
+
+#contato .col-md-8 h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 300;
+    
+    margin-bottom: 1em;
+}
+
+#contato .col-md-8 h3 b {
+    font-weight: 800;
+}
+
+#contato .col-md-8 button {
+    color: #fff;
+
+    font-weight: bold;
+
+    margin: 1em 0;
+}
+
+#contato .col-md-8 button:hover {
+    color: white;
+    border-color: white;
+}
+
+@media (min-width: 768px) {
+    #contato .col-md-8 h3 {
+        font-size: 50px;
+        margin-bottom: 1em;
+    }
+
+    #contato .col-md-8 {
+        margin: 0;
+    }
+
+    #contato .col-md-8 button {
+        margin-top: 3em;
+    }
+}
+
+
+
+#contato .col-md-4 img {
+    width: 100%;
+}
+
+
+
+#acessoRedes {
+    display: none;
+
+    margin: auto; 
+
+    width: 100%;
+    padding: 10px 0;
+
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+
+
+
+#acessoRedes p {
+    font-weight: bold;
+}
+
+#acessoRedes .bi {
+    font-size: 30px;
+
+    color: #fff;
+
+    margin-right: 10px;
+}
+
+/*APRESENTACAO CEOs*/
+
+#apresentacaoCeo {
+    padding: 4em 0 1em 0;
+}
+
+#apresentacaoCeo h3 {
+    font-size: 40px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+#apresentacaoCeo img {
+    margin-top: 2em;
+}
+
+
+
+#apresentacaoCeo p {
+    text-align: justify;
+
+    margin-top: 3em;
+
+    font-weight: 500;
+    width: 95%;
+
+    padding-bottom: 10px;
+
+    overflow: auto;
+}
+
+#apresentacaoCeo img {
+    width: 50%;
+
+    border-radius: 50%;
+    border: 3px solid var(--corPagina); 
+}
+
+@media (min-width: 768px) {
+    #apresentacaoCeo p {
+        height: 200px;
+        width: 90%;
+    }
+}
+
+
+
+#apresentacaoCeo article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Seja nosso parceiro*/
+
+#sejaParceiro {
+    padding-top: 4em;
+    padding-bottom: 4em;
+
+    color: #fff;
+}
+
+#sejaParceiro img {
+    width: 70%;
+}
+
+#bannerParceiro {
+    padding: 0 0;
+    margin: 0 0;
+}
+
+#sejaParceiro h2 {
+    margin-top: 2em;
+
+    font-size: 30px;
+
+    text-transform: uppercase;
+
+    font-weight: 900;
+}
+
+@media (min-width: 768px) {
+    #sejaParceiro h2 {
+        font-size: 50px;    
+    }
+}
+
+
+#sejaParceiro p,
+#sejaParceiro a,
+#sejaParceiro h2 {
+    text-align: center;
+}
+
+#sejaParceiro .offer-subtitle {
+    margin-bottom: 0;
+}
+
+#sejaParceiro .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#sejaParceiro button {
+    margin: 2em 0;
+}
+
+#sejaParceiro button a {
+    text-decoration: none;
+    
+    color: #fff;
+}
+
+#sejaParceiro button:hover {
+    border-color: #fff;
+}
+
+
+
+#sejaParceiro #bannerParceiro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 3em;
+}
+
+
+/*FOOTER*/
+
+#footer-links-container {
+    border-bottom: 1px solid #708388;
+}
+
+#footer .footer-column {
+    padding: 2em;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #footer .footer-column {
+        padding: 5em 2em;
+    }
+}
+
+#footer-links-container h3 {
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+#footer-links-container li {
+    font-size: 0.8em;
+    text-align: center;
+}
+
+
+
+#footer-links-container a {
+    text-decoration: none;
+}
+
+#footer-links-container a:hover {
+    color: var(--corPagina);
+}
+
+#footer-center {
+    border-left: 1px solid #708388;
+    border-right: 1px solid #708388;
+}
+
+#footer-center h3 {
+    font-weight: 900;
+}
+
+#footer-center .store-phone {
+    color: #708388;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+#footerRedes {
+    display: flex;
+
+    text-align: center;
+
+    padding: 1em 0;
+}
+
+#footerRedes i {
+    color: #fff;
+
+    margin-right:10px;
+
+    font-size: 20px;
+}
+
+#copyContainer {
+    padding: 2em 0;
+
+    text-align: center;
+}
+
+#copyContainer p {
+    color: #fff;
+
+    font-size: 0.7em;
+}
+
+@media (min-width: 768px) {
+    #copyContainer p {
+        font-size: 1em;
+    }
+}
